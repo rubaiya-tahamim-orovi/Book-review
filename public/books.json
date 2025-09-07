@@ -1,6 +1,6 @@
 [
   {
-    "id": "B101",
+    "id": 1,
     "title": "The Silent Patient",
     "author": "Alex Michaelides",
     "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjQP6N_JygvrTNu6ztCsTo4qR5AfA1d_L-xfTU407q4hxHrntj",
@@ -13,7 +13,7 @@
     "yearOfPublishing": 2019
   },
   {
-    "id": "B102",
+    "id": 2,
     "title": "Atomic Habits",
     "author": "James Clear",
     "image": "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg",
@@ -26,7 +26,7 @@
     "yearOfPublishing": 2018
   },
   {
-    "id": "B103",
+    "id": 3,
     "title": "Educated",
     "author": "Tara Westover",
     "image": "https://images-na.ssl-images-amazon.com/images/I/81WojUxbbFL.jpg",
@@ -39,7 +39,7 @@
     "yearOfPublishing": 2018
   },
   {
-    "id": "B104",
+    "id": 4,
     "title": "1984",
     "author": "George Orwell",
     "image": "https://images-na.ssl-images-amazon.com/images/I/71kxa1-0mfL.jpg",
@@ -52,7 +52,7 @@
     "yearOfPublishing": 1949
   },
   {
-    "id": "B105",
+    "id": 5,
     "title": "The Alchemist",
     "author": "Paulo Coelho",
     "image": "https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg",
@@ -65,7 +65,7 @@
     "yearOfPublishing": 1988
   },
   {
-    "id": "B106",
+    "id": 6,
     "title": "The Subtle Art of Not Giving a F*ck",
     "author": "Mark Manson",
     "image": "https://images-na.ssl-images-amazon.com/images/I/71QKQ9mwV7L.jpg",
@@ -78,7 +78,7 @@
     "yearOfPublishing": 2016
   },
   {
-    "id": "B107",
+    "id": 7,
     "title": "Becoming",
     "author": "Michelle Obama",
     "image": "https://images-na.ssl-images-amazon.com/images/I/81h2gWPTYJL.jpg",
@@ -91,7 +91,7 @@
     "yearOfPublishing": 2018
   },
   {
-    "id": "B108",
+    "id": 8,
     "title": "Sapiens: A Brief History of Humankind",
     "author": "Yuval Noah Harari",
     "image": "https://images-na.ssl-images-amazon.com/images/I/713jIoMO3UL.jpg",
@@ -104,7 +104,7 @@
     "yearOfPublishing": 2015
   },
   {
-    "id": "B109",
+    "id": 9,
     "title": "It Ends with Us",
     "author": "Colleen Hoover",
     "image": "https://images-na.ssl-images-amazon.com/images/I/81s0B6NYXML.jpg",
@@ -117,7 +117,7 @@
     "yearOfPublishing": 2016
   },
   {
-    "id": "B110",
+    "id": 10,
     "title": "The Midnight Library",
     "author": "Matt Haig",
     "image": "https://i.ibb.co/Qvq3br2c/images.jpg",
@@ -130,7 +130,7 @@
     "yearOfPublishing": 2020
   },
   {
-    "id": "B111",
+    "id": 11,
     "title": "The Four Agreements",
     "author": "Don Miguel Ruiz",
     "image": "https://i.ibb.co/n8sqqSdm/The-four-agreements.jpg",
@@ -143,7 +143,7 @@
     "yearOfPublishing": 1997
   },
   {
-    "id": "B112",
+    "id": 12,
     "title": "Rich Dad Poor Dad",
     "author": "Robert T. Kiyosaki",
     "image": "https://images-na.ssl-images-amazon.com/images/I/81bsw6fnUiL.jpg",
@@ -156,7 +156,7 @@
     "yearOfPublishing": 1997
   },
   {
-    "id": "B113",
+    "id": 13,
     "title": "Can't Hurt Me",
     "author": "David Goggins",
     "image": "https://i.ibb.co/kV46dbp0/cant-hurt-me.jpg",
@@ -169,7 +169,7 @@
     "yearOfPublishing": 2018
   },
   {
-    "id": "B114",
+    "id": 14,
     "title": "The Psychology of Money",
     "author": "Morgan Housel",
     "image": "https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg",
@@ -182,7 +182,7 @@
     "yearOfPublishing": 2020
   },
   {
-    "id": "B115",
+    "id": 15,
     "title": "Dune",
     "author": "Frank Herbert",
     "image": "https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL.jpg",
