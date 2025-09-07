@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+
 const Header = () => {
 
-    const links = <>
-    <li><Link to="/">Home</Link></li>
-    <li><Link>Listed Books</Link></li>
+   const links = <>
+      <li><Link to="/">Home</Link></li>
+    <li><Link to="/listedBooks">Listed Books</Link></li>
     <li><Link>Pages to Read</Link></li>
-    </>
+   </>
 
     return (
         <div>
-            <div className="navbar shadow-sm">
+            <nav className="navbar shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,21 +21,21 @@ const Header = () => {
       <ul
         tabIndex={0}
         className="menu text-[#131313CC] font-semibold menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-       {links}
+      {links}
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">Book Vibe</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu text-[#131313CC] font-semibold menu-horizontal px-1">
-    {links}
+ {links}
     </ul>
   </div>
   <div className="navbar-end gap-3">
     <a className="btn bg-[#23BE0A] text-white px-5 py-5 rounded-lg ">Sign in</a>
     <a className="btn bg-[#59C6D2] text-white px-5 py-5 rounded-lg">Sign up</a>
   </div>
-</div>
+</nav>
         </div>
     );
 };

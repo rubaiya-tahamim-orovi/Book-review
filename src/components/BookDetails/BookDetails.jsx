@@ -1,7 +1,22 @@
-import React from 'react';
+
 import { Link, useLoaderData, useParams } from 'react-router';
+import { ToastContainer, toast } from 'react-toastify';
+import { saveRead, saveWishlist } from '../../Utility/localStorage';
 
 const BookDetails = () => {
+    
+
+    // toast function
+    const handleRead = () => {
+       saveRead(id);
+      
+        toast('Added to Read');
+    }
+    const handleWislist = () => {
+            saveWishlist(id);
+        toast('Added to Wishlist');
+    }
+
     const books = useLoaderData();
 const {id} = useParams();
 const idInt = parseInt(id);
@@ -41,8 +56,10 @@ const {image, title, author, genre, review,
                 </div>
 
                 <div className='space-x-3'>
-                    <button className='font-bold bg-[#23BE0A] text-white px-5 py-3 rounded-lg'>Read</button>
-                    <button className='font-bold bg-[#50B1C9] text-white px-4 py-3 rounded-lg'>Wishlist</button>
+                    <button onClick={handleRead}
+                    className='font-bold cursor-cell bg-[#23BE0A] text-white px-5 py-3 rounded-lg'>Read</button>
+                    <button onClick={handleWislist}
+                     className='font-bold cursor-cell bg-[#50B1C9] text-white px-4 py-3 rounded-lg'>Wishlist</button>
                 </div>
                 </div>
               
@@ -50,6 +67,7 @@ const {image, title, author, genre, review,
              <div className='flex justify-center mb-10'>
                 <Link to="/"> <button className='cursor-pointer bg-[#23BE0A] p-3 rounded-lg text-white font-bold'>Back to Home</button></Link>
              </div>
+             <ToastContainer />
         </div>
     );
 };
