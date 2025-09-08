@@ -1,8 +1,12 @@
-import React from "react";
-// import { useLoaderData } from 'react-router';
+
+
+
 
 const ListedBooks = () => {
-  // const listBooks = useLoaderData();
+  
+
+  
+ 
   return (
     <div className="mt-10">
       <div className="text-center mb-10 rounded-xl bg-[#13131326] text-2xl font-bold py-4">Books</div>

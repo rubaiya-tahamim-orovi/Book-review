@@ -32,4 +32,4 @@ const saveWishlist = id => {
     }
 }
 
-export {saveRead, saveWishlist}
+export {saveRead, saveWishlist, getStoredReadBooks, getStoredWishlistBooks}

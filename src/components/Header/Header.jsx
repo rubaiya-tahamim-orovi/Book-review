@@ -1,12 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 
 const Header = () => {
 
    const links = <>
-      <li><Link to="/">Home</Link></li>
-    <li><Link to="/listedBooks">Listed Books</Link></li>
+      <li>
+    <NavLink
+      to="/" 
+      className={({ isActive }) => 
+        isActive 
+          ? "text-[#23BE0A] font-bold border" 
+          : "text-[#131313CC]"
+      }
+    >
+      Home
+    </NavLink>
+  </li>
+     <li>
+    <NavLink 
+      to="/listedBooks" 
+      className={({ isActive }) => 
+        isActive 
+          ? "text-[#23BE0A] border  font-bold" 
+          : "text-[#131313CC]"
+      }
+    >
+      Listed Books
+      
+    </NavLink>
+  </li>
     <li><Link>Pages to Read</Link></li>
    </>
 
