@@ -10,7 +10,7 @@ const Banner = () => {
                 cursor-pointer text-white font-bold px-4 py-2 rounded-md'>View The List</button></Link>
             </div>
             <div>
-                <img src="../../../public/book-images/dating playbook.png" alt="" />
+                <img src="https://i.ibb.co/QFMhVQZV/dating-playbook.png" alt="" />
             </div>
         </div>
     );
