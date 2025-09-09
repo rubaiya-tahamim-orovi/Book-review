@@ -30,7 +30,21 @@ const Header = () => {
       
     </NavLink>
   </li>
-    <li><Link>Pages to Read</Link></li>
+
+     <li>
+    <NavLink 
+      to="/PagesToRead" 
+      className={({ isActive }) => 
+        isActive 
+          ? "text-[#23BE0A] border  font-bold" 
+          : "text-[#131313CC]"
+      }
+    >
+      Pages to Read
+      
+    </NavLink>
+  </li>
+
    </>
 
     return (

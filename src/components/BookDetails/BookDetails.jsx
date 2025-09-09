@@ -1,19 +1,32 @@
 
 import { Link, useLoaderData, useParams } from 'react-router';
 import { ToastContainer, toast } from 'react-toastify';
-import { saveRead, saveWishlist } from '../../Utility/localStorage';
+import { getStoredReadBooks, getStoredWishlistBooks, saveRead, saveWishlist } from '../../Utility/localStorage';
 
 const BookDetails = () => {
     
 
     // toast function
     const handleRead = () => {
-       saveRead(id);
+
+        const readList = getStoredReadBooks();
+        if(readList.includes(idInt)){
+            return toast('Already in read')
+        }
+       saveRead(idInt);
       
         toast('Added to Read');
     }
     const handleWislist = () => {
-            saveWishlist(id);
+        const readList = getStoredReadBooks();
+        const wishList = getStoredWishlistBooks();
+        if(readList.includes(idInt)){
+            return toast ('Already in read. Cant add on wishlist')
+        }
+        if(wishList.includes(idInt)){
+            return toast('Already in wishList')
+        }
+            saveWishlist(idInt);
         toast('Added to Wishlist');
     }
 
@@ -26,8 +39,8 @@ const {image, title, author, genre, review,
     // console.log(books, id, book);
     return (
         <div>
-            <h1 className='text-3xl text-center font-bold  mt-5 mb-10'>Book Details</h1>
-            <div className='grid grid-cols-2 gap-10 items-center mb-10'>
+            <h1 className='text-3xl text-center font-bold  mt-5 mb-10 '>Book Details</h1>
+            <div className='grid md:grid-cols-2 grid-cols-1 md:px-0 px-5 gap-10 items-center mb-10'>
                 <div className='bg-[#13131326] rounded-2xl p-20'>
                   <div className=' flex justify-center'>
                       <img className='w-[300px]' src={image} alt="" />
@@ -35,27 +48,27 @@ const {image, title, author, genre, review,
                 </div>
                 <div className='space-y-5'>
                 {/* name */}
-                <h2 className='text-4xl font-semibold'>{title}</h2>
+                <h2 className='text-4xl md:text-start text-center font-semibold'>{title}</h2>
                 {/* author name */}
-                <p className='text-[#131313CC] font-semibold'>By : {author}</p>
+                <p className='text-[#131313CC] md:text-start text-center font-semibold'>By : {author}</p>
                 {/* genre */}
-                <div className='border-y border-[#13131326] py-4'>
+                <div className='border-y border-[#13131326] md:text-start text-center py-4'>
                     {genre}
                 </div>
                 {/* review */}
-                <p><span className='text-[#131313] font-bold'>Description :</span> <span className='text-[#131313B3]'> {review} </span></p>
-                <p><span className='font-bold mr-3'>Tag</span> <span className='mr-3 text-[#23BE0A] 
+                <p className='md:text-start text-center'><span className='text-[#131313]  font-bold'>Description :</span> <span className='text-[#131313B3]'> {review} </span></p>
+                <p className='md:text-start text-center'><span className='font-bold mr-3 '>Tag</span> <span className='mr-3 text-[#23BE0A] 
                 bg-[#23BE0A0D] font-bold p-2 rounded-2xl'>#{tags[0]}</span><span className=' text-[#23BE0A] bg-[#23BE0A0D] font-bold p-2 rounded-2xl'>#{tags[1]}</span></p>
 
                 {/* last part */}
-                <div className='border-t border-[#13131326] space-y-5 pt-10 mt-10'>
+                <div className='border-t border-[#13131326] md:text-start text-center space-y-5 pt-10 mt-10'>
                     <p className='text-[#131313B3] font-semibold'>Number of Pages : <span className='text-[#131313] font-bold'>{totalPages}</span></p>
                     <p className='text-[#131313B3]  font-semibold'>Publisher : <span className='text-[#131313] font-bold'>{publisher}</span></p>
                     <p className='text-[#131313B3] font-semibold'>Year of Publishing : <span className='text-[#131313] font-bold'>{yearOfPublishing}</span></p>
                     <p className='text-[#131313B3] font-semibold'>Rating : <span className='text-[#131313] font-bold'>{rating}</span></p>
                 </div>
 
-                <div className='space-x-3'>
+                <div className='space-x-3 md:text-start text-center'>
                     <button onClick={handleRead}
                     className='font-bold cursor-cell bg-[#23BE0A] text-white px-5 py-3 rounded-lg'>Read</button>
                     <button onClick={handleWislist}
