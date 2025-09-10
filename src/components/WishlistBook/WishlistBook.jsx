@@ -36,7 +36,7 @@ const WishlistBook = ({wishlist}) => {
             <div className='text-[#328EFF] bg-[#328EFF26] md:px-3 px-1 py-2 md:text-base text-xs rounded-full'>Catagory : {genre}</div>
             <div className='text-[#FFAC33] bg-[#FFAC3326] md:px-3 px-1 py-2 md:text-base text-xs rounded-full'>Rating : {rating}</div>
             <Link to={`/book/${id}`}><button className='text-white
-            cursor-pointer bg-[#23BE0A] md:px-3 px-2 py-2 md:text-base text-xm rounded-full'>View Details</button></Link>
+            cursor-pointer bg-[#23BE0A] md:px-3 px-2 py-2 md:text-base text-xs rounded-full'>View Details</button></Link>
         </div>
            </div>
         </div>
