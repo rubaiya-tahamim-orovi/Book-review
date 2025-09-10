@@ -33,8 +33,8 @@ const WishlistBook = ({wishlist}) => {
               </div>
 
         <div className='flex md:gap-5 gap-3'>
-            <div className='text-[#328EFF] bg-[#328EFF26] md:px-3 px-2 py-2 md:text-base text-sm rounded-full'>Catagory : {genre}</div>
-            <div className='text-[#FFAC33] bg-[#FFAC3326] md:px-3 px-2 py-2 md:text-base text-sm rounded-full'>Rating : {rating}</div>
+            <div className='text-[#328EFF] bg-[#328EFF26] md:px-3 px-1 py-2 md:text-base text-sm rounded-full'>Catagory : {genre}</div>
+            <div className='text-[#FFAC33] bg-[#FFAC3326] md:px-3 px-1 py-2 md:text-base text-sm rounded-full'>Rating : {rating}</div>
             <Link to={`/book/${id}`}><button className='text-white
             cursor-pointer bg-[#23BE0A] md:px-3 px-2 py-2 md:text-base text-sm rounded-full'>View Details</button></Link>
         </div>
