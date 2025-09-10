@@ -64,7 +64,7 @@ const ListedBooks = () => {
           className="tab"
           aria-label="Read Books"
         />
-        <div className="tab-content  bg-base-100 border-base-300 p-6">
+        <div className="tab-content  bg-base-100 border-base-300 md:p-6 p-3">
          
          <div className="space-y-5">
          
@@ -81,7 +81,7 @@ const ListedBooks = () => {
           aria-label="Wishlist Books"
           defaultChecked
         />
-        <div className="tab-content  bg-base-100 border-base-300 p-6">
+        <div className="tab-content  bg-base-100 border-base-300 md:p-6 p-3">
           <div className="space-y-5">
             {
               wishlistBook.map(wishlist => <WishlistBook key={wishlist.id} wishlist={wishlist}></WishlistBook>)

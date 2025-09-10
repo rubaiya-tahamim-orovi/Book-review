@@ -6,7 +6,7 @@ const WishlistBook = ({wishlist}) => {
      const {title, image,author,tags,yearOfPublishing,
         publisher,totalPages,genre,rating , id} = wishlist;
     return (
-        <div className='md:grid md:grid-cols-4 grid-cols-1 border pt-7 pb-7 px-7 rounded-xl  border-[#13131326]  gap-5'>
+        <div className='md:grid md:grid-cols-4 grid-cols-1 border pt-7 pb-7 md:px-7 px-4 rounded-xl  border-[#13131326]  gap-5'>
            
            <div className='flex  justify-center col-span-1 bg-[#F3F3F3] rounded-xl  p-5'>
             <img src={image} className='w-[100px]' alt="" />
@@ -33,10 +33,10 @@ const WishlistBook = ({wishlist}) => {
               </div>
 
         <div className='flex md:gap-5 gap-3'>
-            <div className='text-[#328EFF] bg-[#328EFF26] md:px-3 px-1 py-2 md:text-base text-sm rounded-full'>Catagory : {genre}</div>
-            <div className='text-[#FFAC33] bg-[#FFAC3326] md:px-3 px-1 py-2 md:text-base text-sm rounded-full'>Rating : {rating}</div>
+            <div className='text-[#328EFF] bg-[#328EFF26] md:px-3 px-1 py-2 md:text-base text-xs rounded-full'>Catagory : {genre}</div>
+            <div className='text-[#FFAC33] bg-[#FFAC3326] md:px-3 px-1 py-2 md:text-base text-xs rounded-full'>Rating : {rating}</div>
             <Link to={`/book/${id}`}><button className='text-white
-            cursor-pointer bg-[#23BE0A] md:px-3 px-2 py-2 md:text-base text-sm rounded-full'>View Details</button></Link>
+            cursor-pointer bg-[#23BE0A] md:px-3 px-2 py-2 md:text-base text-xm rounded-full'>View Details</button></Link>
         </div>
            </div>
         </div>

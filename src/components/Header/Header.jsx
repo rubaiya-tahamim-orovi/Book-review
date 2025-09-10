@@ -69,8 +69,8 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end gap-3">
-    <a className="btn bg-[#23BE0A] text-white px-5 py-5 rounded-lg ">Sign in</a>
-    <a className="btn bg-[#59C6D2] text-white px-5 py-5 rounded-lg">Sign up</a>
+    <a className="btn bg-[#23BE0A] text-white md:px-5 px-2 md:py-5 py-1 md:text-base text-xs rounded-lg ">Sign in</a>
+    <a className="btn bg-[#59C6D2] text-white md:px-5 px-2 md:py-5 py-1 md:text-base text-xs rounded-lg">Sign up</a>
   </div>
 </nav>
         </div>
